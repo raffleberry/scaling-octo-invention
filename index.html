@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <style>
+        .masthead.segment {
+            min-height: 700px;
+            padding: 1em 0em;
+        }
+
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+
+        .masthead h1.ui.header {
+            margin-top: 1em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .header {
+            color: yellow !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Add a business</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a class="item">Add a Business</a>
+        <a class="item">Categories</a>
+    </div>
+    <div id="home" class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    <a class="yellow card">
+                        <div class="image">
+                            <img src="images/logo.jpg" height="150px">
+                        </div>
+                    </a>
+                    Yellow Pages
+                </h1>
+                <h2>#1 INDIAN WEBSITE FOR LISTING LOCAL BUSINESS.</h2>
+                <form id="#my-form" onsubmit="return viewSearchPage()" style="margin: 5px 0 5px 0">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="ui floating dropdown labeled search icon button">
+                        <i class="world icon"></i>
+                        <span class="text">Select City</span>
+                        <div class="menu">
+                            <div class="item" selected>Burla</div>
+                            <div class="item">Cuttack</div>
+                            <div class="item">Rupsa</div>
+                            <div class="item">Delhi</div>
+                        </div>
+                    </div>
+                    <button style="display:none" type="submit"></button>
+                </form>
+            </div>
+            <div style="padding-top: 2em;"></div>
+            <div style="padding-left: 5em; padding-right: 5em;" class="ui grid container">
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/apparels-and-accessories.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">apparels and accessories</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/beauty-and-wellness.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">beauty and wellness</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/education.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">education</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/food-and-beverages.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">food and beverages</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/health.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">health</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/logistics-services.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">logistics services</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/printing-and-stationaries.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">printing and stationaries</a>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <div class="image">
+                        <img src="images/wedding-and-events.png">
+                    </div>
+                    <div class="content">
+                        <a class="header">wedding and events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="semantic/jquery-3.1.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+            ;
+        function viewSearchPage() {
+            window.location.href = "search.html";
+            return false;
+        }
+    </script>
+</body>
+
+</html>

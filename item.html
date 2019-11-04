@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <style>
+        .masthead.segment {
+            min-height: 700px;
+            padding: 1em 0em;
+        }
+
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+
+        .masthead h1.ui.header {
+            margin-top: 1em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .header {
+            color: yellow !important;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        .vg {
+            background: radial-gradient(transparent, black), url(images/item.jpg);
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item">
+                <div class="image"> <img height="50px" src="images/logo.jpg" alt="logo"></div>
+            </a>
+            <a class="active item">
+                <form id="#my-form" onsubmit="return viewSearchPage()" style="margin: 5px 0 5px 0">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Computers">
+                    </div>
+                    <div class="ui floating dropdown labeled search icon button">
+                        <i class="world icon"></i>
+                        <span class="text">Burla</span>
+                    </div>
+                    <button style="display:none" type="submit"></button>
+                </form>
+            </a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item" style="margin: 110px 7.3% 0 7.3%">
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui grid vg" style="padding:20px 20px 20px 20px">
+                <div class="ten wide column row">
+                    <div class="six wide column" style="text-align: left; font-size: 1em;">
+                        <h1>Reliance Retail Limited</h1>
+                        <div style="font-size: 2em;">
+                            <div class="ui star rating" data-rating="1" data-max-rating="5"
+                                style="background-color: gainsboro;"></div><span style="font-size: 0.5em;"> &nbsp; 900
+                                reviews</span> <br><br>
+                            IG Market, Burla, <br><br>768018<br><br>
+                            +91 7680993752
+                        </div>
+                    </div>
+                </div>
+                <div class="right floated two wide column row">
+                    <span><a style="color: ghostwhite;" href="">Write a review</a></span>
+                </div>
+            </div>
+            <div style="padding-top: 2em;"></div>
+        </div>
+        <div class="ui grid">
+
+            <div class="five wide column" style="background:gainsboro;">
+                <table>
+                    <th colspan="3"> Business timings</th>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:30AM - 10:00PM</td>
+                        <td><span style="color:green; "> &nbsp; Open</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="five wide column" style="background:gainsboro;">
+                <h4>Location</h4>
+                <img src="images/map.png" width="100%">
+            </div>
+
+
+            <div class="six wide column">
+
+                <div class="ui grid" style="background-color: gainsboro;">
+                    <div class="sixteen wide column">
+                        <div class="ui grid">
+                            <div class="column">
+                                <a href="#">Venkateshwar W.</a><br>
+                                <b> Good Shopping Store</b><br>
+                                <div class="ui star rating" data-rating="3" data-max-rating="5"></div> <span
+                                    style="font-size: 0.8em;">3/5</span><br>
+                                It's a very good Apparels Store and needs to visit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui grid" style="background-color: gainsboro;">
+                    <div class="sixteen wide column">
+                        <div class="ui grid">
+                            <div class="column">
+                                <a href="#">Subramanium S.</a><br>
+                                <b> Calculator</b><br>
+                                <div class="ui star rating" data-rating="5" data-max-rating="5"></div> <span
+                                    style="font-size: 0.8em;">5/5</span><br>
+                                3 calculators under the 1600 its good deal if the quality of calculator is good.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="semantic/jquery-3.1.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+            ;
+        $('.ui.rating')
+            .rating()
+            ;
+    </script>
+</body>
+
+</html>
