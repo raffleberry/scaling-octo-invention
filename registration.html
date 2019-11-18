@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home - Book Squirrel</title>
+  <link rel="stylesheet" href="semantic/semantic.min.css">
+  <style>
+    body {
+      background-color: grey;
+    }
+    #maincontent {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="item" href="./index.html">Home</a>
+            <a class="item">Add a business</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui primary button" href="./login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div id="maincontent">
+    <div class="ui grid">
+      <div class="eight wide centered column">
+        <div class="ui segment">
+          <form class="ui form">
+            <div class="field">
+              <label>Full Name</label>
+              <input type="text" name="fullname" placeholder="Debadutta Padhial">
+            </div>
+            <div class="field">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="abc@pqr.xyz">
+              </div>
+            <div class="field">
+              <label>Username</label>
+              <input type="text" name="username" placeholder="onion12">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="minimum 8 character">
+            </div>
+            <div class="field">
+              <label>Confirm Password</label>
+              <input type="password" name="password" placeholder="Should match with the previous one">
+            </div>
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0">
+                <label>I agree to the Terms & Conditions</label>
+              </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+          </form>
+          <div class="ui divider"></div>
+          <div class="right aligned">Already have an Account? <a href="./login.html">Sign In Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="semantic/jquery-3.1.1.min.js"></script>
+  <script src="semantic/semantic.min.js"></script>
+</body>
+
+</html>
